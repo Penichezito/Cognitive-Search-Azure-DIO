@@ -287,4 +287,4 @@ Vamos ver o poder do armazenamento de conhecimento em ação. Ao executar o assi
 
 ## Saber mais
 
-Esta pesquisa simples indexa apenas algumas das capacidades do serviço Azure AI Search. Para saber mais sobre o que você pode fazer com este serviço, consulte a página do serviço Azure AI Search .
+Esta pesquisa simples indexa apenas algumas das capacidades do serviço [Azure AI Search](https://learn.microsoft.com/pt-br/azure/search/). Para saber mais sobre o que você pode fazer com este serviço, consulte a página do serviço Azure AI Search .
