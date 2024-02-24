@@ -285,6 +285,6 @@ Vamos ver o poder do armazenamento de conhecimento em ação. Ao executar o assi
 
    > **Observe as frases-chave que o armazenamento de conhecimento conseguiu capturar do conteúdo das avaliações. Muitos dos campos são chaves, portanto você pode vincular as tabelas como um banco de dados relacional. O último campo mostra as frases-chave que foram            extraídas pelo conjunto de habilidades.**
 
-###Saber mais
+## Saber mais
 
 Esta pesquisa simples indexa apenas algumas das capacidades do serviço Azure AI Search. Para saber mais sobre o que você pode fazer com este serviço, consulte a página do serviço Azure AI Search .
