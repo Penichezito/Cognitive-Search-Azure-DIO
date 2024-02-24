@@ -87,11 +87,11 @@ Retorne à página inicial do portal do Azure. Clique no botão ＋Criar um recu
 
 3. Insira as seguintes configurações e clique em Criar :
 
-  + Nome : Coffee-Reviews
-  + Nível de acesso público : Container (acesso de leitura anônimo para containers e blobs)
-  + Avançado : sem alterações .
-E
-4.m uma nova guia do navegador, baixe as avaliações de café compactadas em https://aka.ms/mslearn-coffee-reviewse extraia os arquivos para a pasta de avaliações .
+     + Nome : Coffee-Reviews
+     + Nível de acesso público : Container (acesso de leitura anônimo para containers e blobs)
+     + Avançado : sem alterações .
+
+4. Em uma nova guia do navegador, baixe as avaliações de café compactadas em https://aka.ms/mslearn-coffee-reviewse extraia os arquivos para a pasta de avaliações .
 
 5. No portal do Azure, selecione o contêiner de avaliações de café . No contêiner, selecione Carregar .
 
