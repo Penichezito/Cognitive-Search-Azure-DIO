@@ -216,17 +216,25 @@ Código
     "search": "*",
     "count": true
 }
-Selecione Pesquisar . A consulta de pesquisa retorna todos os documentos no índice de pesquisa, incluindo uma contagem de todos os documentos no campo @odata.count . O índice de pesquisa deve retornar um documento JSON contendo os resultados da pesquisa.
+````
 
-Agora vamos filtrar por localização. No campo do editor de consultas JSON , copie e cole:
+ 1. Selecione Pesquisar . A consulta de pesquisa retorna todos os documentos no índice de pesquisa, incluindo uma contagem de todos os documentos no campo @odata.count . O índice de pesquisa deve retornar um documento JSON contendo os resultados da pesquisa.
+
+ 2. Agora vamos filtrar por localização. No campo do editor de consultas JSON , copie e cole:
+
+````
 Código
 {
  "search": "locations:'Chicago'",
  "count": true
 }
-Selecione Pesquisar . A consulta pesquisa todos os documentos no índice e filtra revisões com localização em Chicago. Você deveria ver 3no @odata.countcampo.
+````
 
-Agora vamos filtrar por sentimento. No campo do editor de consultas JSON , copie e cole:
+ 3. Selecione Pesquisar . A consulta pesquisa todos os documentos no índice e filtra revisões com localização em Chicago. Você deveria ver 3no @odata.countcampo.
+
+ 4. Agora vamos filtrar por sentimento. No campo do editor de consultas JSON , copie e cole:
+
+````
 Código
 {
  "search": "sentiment:'negative'",
@@ -234,45 +242,49 @@ Código
 }
 ````
 
-  1. Selecione Pesquisar . A consulta pesquisa todos os documentos no índice e filtra revisões com sentimento negativo. Você deveria ver 1no @odata.countcampo.
+5. Selecione Pesquisar . A consulta pesquisa todos os documentos no índice e filtra revisões com sentimento negativo. Você deveria ver 1no @odata.countcampo.
 
   > !Nota Veja como os resultados são classificados por @search.score. Esta é a pontuação atribuída pelo mecanismo de pesquisa para mostrar o quão próximos os resultados correspondem à consulta fornecida.
 
-Um dos problemas que podemos querer resolver é por que pode haver certas avaliações. Vamos dar uma olhada nas frases-chave associadas à avaliação negativa. O que você acha que pode ser a causa da revisão?
-Revise o armazenamento de conhecimento
+6. Um dos problemas que podemos querer resolver é por que pode haver certas avaliações. Vamos dar uma olhada nas frases-chave associadas à avaliação negativa. O que você acha que pode ser a causa da revisão?
+
+
+## ***Revise o armazenamento de conhecimento***
+
 Vamos ver o poder do armazenamento de conhecimento em ação. Ao executar o assistente Importar dados , você também criou um armazenamento de conhecimento. Dentro do armazenamento de conhecimento, você encontrará os dados enriquecidos extraídos pelas habilidades de IA que persistem na forma de projeções e tabelas.
 
-No portal do Azure, navegue de volta para a sua conta de armazenamento do Azure.
+  1. No portal do Azure, navegue de volta para a sua conta de armazenamento do Azure.
 
-No painel do menu esquerdo, selecione Containers . Selecione o contêiner de armazenamento de conhecimento .
+  2. No painel do menu esquerdo, selecione Containers . Selecione o contêiner de armazenamento de conhecimento .
 
-Captura de tela do contêiner de armazenamento de conhecimento.
+![Captura de tela do contêiner de armazenamento de conhecimento](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/media/create-cognitive-search-solution/knowledge-store-blob-0.png)
 
-Selecione qualquer um dos itens e clique no arquivo objectprojection.json .
+3. Selecione qualquer um dos itens e clique no arquivo **objectprojection.json .**
 
-Captura de tela do objectprojection.json.
+![Captura de tela do objectprojection.json.](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/media/create-cognitive-search-solution/knowledge-store-blob-1.png)
 
-Selecione Editar para ver o JSON produzido para um dos documentos do seu armazenamento de dados do Azure.
+4. Selecione Editar para ver o JSON produzido para um dos documentos do seu armazenamento de dados do Azure.
 
-Captura de tela de como encontrar o botão de edição.
+![Captura de tela de como encontrar o botão de edição](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/media/create-cognitive-search-solution/knowledge-store-blob-2.png)
 
-Selecione a localização atual do blob de armazenamento no canto superior esquerdo da tela para retornar à conta de armazenamento Containers .
+5. Selecione a localização atual do blob de armazenamento no canto superior esquerdo da tela para retornar à conta de armazenamento Containers.
 
-Captura de tela da localização atual do blob de armazenamento.
+![Captura de tela da localização atual do blob de armazenamento.](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/media/create-cognitive-search-solution/knowledge-store-blob-4.png)
 
-Em Containers , selecione o contêiner coffee-skillset-image-projection . Selecione qualquer um dos itens.
+6. Em Containers , selecione o contêiner coffee-skillset-image-projection . Selecione qualquer um dos itens.
 
-Captura de tela do contêiner do conjunto de habilidades.
+![Captura de tela do contêiner do conjunto de habilidades.](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/media/create-cognitive-search-solution/knowledge-store-blob-5.png)
 
-Selecione qualquer um dos arquivos .jpg . Selecione Editar para ver a imagem armazenada no documento. Observe como todas as imagens dos documentos são armazenadas desta forma.
+7. Selecione qualquer um dos arquivos .jpg . Selecione Editar para ver a imagem armazenada no documento. Observe como todas as imagens dos documentos são armazenadas desta forma.
 
-Captura de tela da imagem salva.
+![Captura de tela da imagem salva.](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/media/create-cognitive-search-solution/knowledge-store-blob-3.png)
 
-Selecione a localização atual do blob de armazenamento no canto superior esquerdo da tela para retornar à conta de armazenamento Containers .
+8. Selecione a localização atual do blob de armazenamento no canto superior esquerdo da tela para retornar à conta de armazenamento Containers .
 
-Selecione Navegador de armazenamento no painel esquerdo e selecione Tabelas . Há uma tabela para cada entidade no índice. Selecione a tabela coffeeSkillsetKeyPhrases .
+9. Selecione Navegador de armazenamento no painel esquerdo e selecione Tabelas . Há uma tabela para cada entidade no índice. Selecione a tabela coffeeSkillsetKeyPhrases .
 
-Observe as frases-chave que o armazenamento de conhecimento conseguiu capturar do conteúdo das avaliações. Muitos dos campos são chaves, portanto você pode vincular as tabelas como um banco de dados relacional. O último campo mostra as frases-chave que foram extraídas pelo conjunto de habilidades.
+   Observe as frases-chave que o armazenamento de conhecimento conseguiu capturar do conteúdo das avaliações. Muitos dos campos são chaves, portanto você pode vincular as tabelas como um banco de dados relacional. O último campo mostra as frases-chave que foram            extraídas pelo conjunto de habilidades.
 
-Saber mais
+###Saber mais
+
 Esta pesquisa simples indexa apenas algumas das capacidades do serviço Azure AI Search. Para saber mais sobre o que você pode fazer com este serviço, consulte a página do serviço Azure AI Search .
