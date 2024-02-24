@@ -32,11 +32,11 @@ Vamos imaginar que você trabalha para a Fourth Coffee, uma rede nacional de caf
 
 2. Clique no botão + Criar um recurso , pesquise Azure AI Search e crie um recurso Azure AI Search com as seguintes configurações:
 
- + Assinatura : sua assinatura do Azure .
- + Grupo de recursos : selecione ou crie um grupo de recursos com um nome exclusivo .
- + Nome do serviço : um nome exclusivo .
- + Localização : Escolha qualquer região disponível .
- + Nível de preços : Básico
+   + Assinatura : sua assinatura do Azure .
+   + Grupo de recursos : selecione ou crie um grupo de recursos com um nome exclusivo .
+   + Nome do serviço : um nome exclusivo .
+   + Localização : Escolha qualquer região disponível .
+   + Nível de preços : Básico
 
 3. Selecione Review + create e depois de ver a resposta Validation Success , selecione Create .
 
@@ -47,12 +47,12 @@ Vamos imaginar que você trabalha para a Fourth Coffee, uma rede nacional de caf
 Você precisará provisionar um recurso de serviços de IA do Azure que esteja no mesmo local que seu recurso do Azure AI Search. Sua solução de pesquisa usará esse recurso para enriquecer os dados no armazenamento de dados com insights gerados por IA.
 
 Retorne à página inicial do portal do Azure. Clique no botão ＋Criar um recurso e pesquise os serviços de IA do Azure . Selecione criar um plano de serviços de IA do Azure . Você será levado a uma página para criar um recurso de serviços de IA do Azure. Configure-o com as seguintes configurações:
-  + Assinatura : sua assinatura do Azure .
-  + Grupo de recursos : O mesmo grupo de recursos que seu recurso do Azure AI Search .
-  + Região : o mesmo local do recurso do Azure AI Search .
-  + Nome : Um nome exclusivo .
-  + Nível de preços : Padrão S0
-  + Ao marcar esta caixa, confirmo que li e compreendi todos os termos abaixo : Selecionado
+    + Assinatura : sua assinatura do Azure .
+    + Grupo de recursos : O mesmo grupo de recursos que seu recurso do Azure AI Search .
+    + Região : o mesmo local do recurso do Azure AI Search .
+    + Nome : Um nome exclusivo .
+    + Nível de preços : Padrão S0
+    + Ao marcar esta caixa, confirmo que li e compreendi todos os termos abaixo : Selecionado
 
 2. Selecione Revisar + criar . Depois de ver a resposta Validation Passed , selecione Create .
 
@@ -64,12 +64,12 @@ Retorne à página inicial do portal do Azure. Clique no botão ＋Criar um recu
 
 2. Procure conta de armazenamento e crie um recurso de conta de armazenamento com as seguintes configurações:
 
-  + Assinatura : sua assinatura do Azure .
-  + Grupo de recursos : O mesmo grupo de recursos que os recursos do Azure AI Search e dos serviços Azure AI .
-  + Nome da conta de armazenamento : um nome exclusivo .
-  + Localização : Escolha qualquer localização disponível .
-  + Padrão de desempenho
-  + Redundância : armazenamento localmente redundante (LRS)
+    + Assinatura : sua assinatura do Azure .
+    + Grupo de recursos : O mesmo grupo de recursos que os recursos do Azure AI Search e dos serviços Azure AI .
+    + Nome da conta de armazenamento : um nome exclusivo .
+    + Localização : Escolha qualquer localização disponível .
+    + Padrão de desempenho
+    + Redundância : armazenamento localmente redundante (LRS)
   
 3. Clique em Revisar e em Criar . Aguarde a conclusão da implantação e vá para o recurso implantado.
 
@@ -115,15 +115,15 @@ No portal do Azure, navegue até o recurso Azure AI Search. Na página Visão ge
 
 2. Na página Conectar-se aos seus dados , na lista Fonte de Dados , selecione Azure Blob Storage . Preencha os detalhes do armazenamento de dados com os seguintes valores:
 
-  + Fonte de dados : Armazenamento de Blobs do Azure
-  + Nome da fonte de dados : coffee-customer-data
-  + Dados a extrair : Conteúdo e metadados
-  + Modo de análise : Padrão
-  + Cadeia de conexão : *Selecione Escolha uma conexão existente . Selecione sua conta de armazenamento, selecione o contêiner de avaliações de café e clique em Selecionar .
-  + Autenticação de identidade gerenciada : Nenhuma
-  + Nome do contêiner : esta configuração é preenchida automaticamente depois que você escolhe uma conexão existente .
-  + Pasta Blob : deixe em branco .
-  + Descrição : Avaliações sobre Fourth Coffee Shops.
+    + Fonte de dados : Armazenamento de Blobs do Azure
+    + Nome da fonte de dados : coffee-customer-data
+    + Dados a extrair : Conteúdo e metadados
+    + Modo de análise : Padrão
+    + Cadeia de conexão : *Selecione Escolha uma conexão existente . Selecione sua conta de armazenamento, selecione o contêiner de avaliações de café e clique em Selecionar .
+    + Autenticação de identidade gerenciada : Nenhuma
+    + Nome do contêiner : esta configuração é preenchida automaticamente depois que você escolhe uma conexão existente .
+    + Pasta Blob : deixe em branco .
+    + Descrição : Avaliações sobre Fourth Coffee Shops.
 
 3. Selecione Próximo: Adicionar habilidades cognitivas (opcional) .
 
@@ -151,13 +151,13 @@ Gerar tags de imagens	 	|             |  imagemTags
 Gere legendas de imagens|	 	          |  legenda da imagem
 
 6. Em Salvar enriquecimentos em um armazenamento de conhecimento , selecione:
-  + Projeções de imagem
-  + Documentos
-  + Páginas
-  + Frases chave
-  + Entidades
-  + Detalhes da imagem
-  + Referências de imagem
+    + Projeções de imagem
+    + Documentos
+    + Páginas
+    + Frases chave
+    + Entidades
+    + Detalhes da imagem
+    + Referências de imagem
 
 > **!Nota:** Se aparecer um aviso solicitando uma cadeia de conexão de conta de armazenamento .
 
