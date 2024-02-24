@@ -283,7 +283,7 @@ Vamos ver o poder do armazenamento de conhecimento em ação. Ao executar o assi
 
 9. Selecione Navegador de armazenamento no painel esquerdo e selecione Tabelas . Há uma tabela para cada entidade no índice. Selecione a tabela coffeeSkillsetKeyPhrases .
 
-   Observe as frases-chave que o armazenamento de conhecimento conseguiu capturar do conteúdo das avaliações. Muitos dos campos são chaves, portanto você pode vincular as tabelas como um banco de dados relacional. O último campo mostra as frases-chave que foram            extraídas pelo conjunto de habilidades.
+   > **Observe as frases-chave que o armazenamento de conhecimento conseguiu capturar do conteúdo das avaliações. Muitos dos campos são chaves, portanto você pode vincular as tabelas como um banco de dados relacional. O último campo mostra as frases-chave que foram            extraídas pelo conjunto de habilidades.**
 
 ###Saber mais
 
